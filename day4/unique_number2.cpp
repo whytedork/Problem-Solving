@@ -7,11 +7,11 @@ using namespace std;
 //find unique numbers in an array - only two unique numbers in array are present
 
 bool setBit(int n, int pos) {
-	return (n & (1 << pos) != 0);
+	return ((n & (1 << pos)) != 0);
 }
 
 int main() {
-	int a[] = {1, 2, 3, 4, 5, 1, 2, 3};
+	int a[] = {1, 2, 2, 3, 4, 5, 1, 3};
 	int n = sizeof(a) / sizeof(int);
 	int unique1 = 0;
 	int unique2 = 0;
